@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="container text-white" style={{ padding:'50px 0' }}>
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-        <div className="lg:col-span-6">
-          <div className="flex items-center gap-3" style={{ marginBottom:"20px" }}>
+      <div className="grid grid-cols-1 xl:grid-cols-12 gap-10">
+        <div className="lg:col-span-6 md:text-center xl:text-left">
+          <div className="flex items-center md:justify-center xl:justify-start gap-3" style={{ marginBottom:"20px" }}>
             <img src={logo} alt="logo" className="h-[100px] w-[100px] object-contain"/>
               <h2 className="text-xl font-bold">
                 4 SEASONS
@@ -18,7 +18,7 @@ export default function Footer() {
             </p>
             <h3 className="text-3xl lg:text-4xl font-bold mt-2 leading-snug">
               In Your Next{" "}
-              <span className="text-red-600">
+              <span className="text-[#9D1A10]">
                 Event?
               </span>
             </h3>
@@ -26,7 +26,7 @@ export default function Footer() {
 
           <div className="lg:col-span-6">
             {/* Grid داخلي */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {/* Company */}
               <div className="company">
                 <h4 className="font-bold text-lg" style={{ marginBottom:"10px" }}>
@@ -110,7 +110,7 @@ export default function Footer() {
           </div>
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between" style={{ paddingTop:"20px" }}>
-          <p className="text-gray-400 text-sm">&copy; {new Date().getFullYear()} 4 Seasons. All rights reserved.</p>
+          <p className="copyRight text-gray-400 text-sm">&copy; {new Date().getFullYear()} 4 Seasons. All rights reserved.</p>
           {/* Social */}
           <div className="flex items-center gap-4 text-gray-400">
             <FaXTwitter className="cursor-pointer hover:text-white transition" />

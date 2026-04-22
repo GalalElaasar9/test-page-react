@@ -40,10 +40,10 @@ export default function Navbar() {
               <Link
                 key={link.to}
                 // to={link.to}
-                className={`relative text-sm font-medium transition-all duration-300
+                className={`relative text-md transition-all duration-300
                   ${
                     isActive
-                      ? "text-white opacity-100 after:content-[''] after:absolute after:left-[50%] after:transform after:translate-x-[-50%] after:-bottom-2 after:w-[5px] after:h-[5px]  after:bg-[#9D1A10] after:rounded-full"
+                      ? "text-white font-bold opacity-100 after:content-[''] after:absolute after:left-[50%] after:transform after:translate-x-[-50%] after:-bottom-2 after:w-[5px] after:h-[5px]  after:bg-[#9D1A10] after:rounded-full"
                       : "text-white opacity-60 hover:opacity-100 font-light"
                   }`}
               >
@@ -51,24 +51,20 @@ export default function Navbar() {
               </Link>
             );
           })}
+          {/* 🔵 Button */}
+          <div>
+            <Link
+              // to="/contact"
+              className="btn text-white bg-[#9D1A10] rounded-xl font-light text-md uppercase"
+            >
+              Contact Us
+            </Link>
+          </div>
         </nav>
-
-        {/* 🔵 Button */}
-        <div>
-          <Link
-            // to="/contact"
-            className="btn text-white bg-[#9D1A10] rounded-xl p-10"
-          >
-            Contact Us
-          </Link>
-
-        </div>
-
-
 
         {/* 📱 Mobile button */}
         <button
-          className="lg:hidden text-white"
+          className="lg:hidden text-white cursor-pointer" style={{ paddingRight:"20px" }} 
           onClick={() => setOpen(!open)}
         >
           {open ? <X /> : <Menu />}
@@ -99,15 +95,12 @@ export default function Navbar() {
                 </Link>
               );
             })}
-
-            <Link
-              to="/signup"
-              onClick={() => setOpen(false)}
-              className="text-center px-4 py-2 bg-red-600 text-white rounded-md"
-            >
-              Contact
-            </Link>
-
+              <Link
+                onClick={() => setOpen(false)}
+                className="btn text-center px-4 py-2 bg-[#9D1A10] text-white rounded-md"
+              >
+                Contact
+              </Link>
           </div>
         </div>
       )}

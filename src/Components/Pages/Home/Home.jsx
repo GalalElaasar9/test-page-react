@@ -51,23 +51,22 @@ export default function Home() {
   return (
     <section style={{ paddingTop: "80px" }} className="container">
       <div>
-        <h1 className="text-white font-[600] text-[60px] leading-tight italic mx-auto">
+        <h1 className="text-white font-[600] text-[32px] md:text-[60px] leading-tight italic mx-auto">
           for catering, services{" "}
-          <span className="text-white opacity-50 font-light">and</span> General
-          Transportation <br />
-          <span className="text-white opacity-50 font-light">and</span>{" "}
-          <span className="text-[#9D1A10]">Real Estate Investment</span>
+          <span className="text-white opacity-50 font-light">and</span> General Transportation 
+          <span className="text-white opacity-50 font-light"> and</span>{" "}
+          <span className="text-[#9D1A10] font-[600]">Real Estate Investment</span>
         </h1>
 
         <p
           style={{ marginTop: "20px" }}
-          className="text-white text-[24px] leading-relaxed mx-auto"
+          className="text-white font-[200] text-[20px] text-justify md:text-[24.5px] md:text-left leading-relaxed mx-auto"
         >
           <strong>4Seasons </strong>
           is proudly from Iraq, run full service catering company based under
-          the sky of Iraq. It was founded in 2016 by a <br /> person who has a
+          the sky of Iraq. It was founded in 2016 by a person who has a
           respective experiences in food service & event management – that
-          culminated into this wonderful entity. His <br /> leadership qualities
+          culminated into this wonderful entity. His leadership qualities
           and tenacity allowed to bring <strong>4Seasons</strong> Company to
           where it is today.
         </p>
@@ -126,13 +125,13 @@ export default function Home() {
             Try our distinguished services
           </p>
           <h2 className="text-white text-[36px] font-bold mb-4 text-center">What We <span className="text-[#9D1A10]">Offers</span> </h2>
-          <p className="text-white text-[24.5px] leading-relaxed text-left opacity-90 font-light">
+          <p className="text-white text-[23px] text-justify md:text-[24.5px] leading-relaxed md:text-left opacity-90 font-light">
             Continuously improve the quality of our food, beverage. hospitality
-            and retail outlets to ensure they deliver a highly innovative <br /> and
+            and retail outlets to ensure they deliver a highly innovative and
             contemporary service, meeting the diverse needs of our customers
             expectations and desires
           </p>
-          <div className="offers-image grid grid-cols-1 lg:grid-cols-3 gap-8" style={{ marginTop: "20px" }}>
+          <div className="offers-image grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8" style={{ marginTop: "20px" }}>
             {offers.map((offer, index) => (
               <figure
                 key={offer.id}

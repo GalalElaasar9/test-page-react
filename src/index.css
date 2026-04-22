@@ -25,6 +25,11 @@ body{
 .btn{
   padding: 10px 30px;
 }
+@media (max-width:991px) {
+  .copyRight{
+    margin-bottom: 10px;
+  }
+}
 /* :root {
   --text: #6b6375;
   --text-h: #08060d;
