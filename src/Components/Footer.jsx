@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="container bg-black text-white" style={{ padding:'50px 0' }}>
+    <footer className="container text-white" style={{ padding:'50px 0' }}>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
         <div className="lg:col-span-6">
           <div className="flex items-center gap-3" style={{ marginBottom:"20px" }}>

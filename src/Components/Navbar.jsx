@@ -56,7 +56,7 @@ export default function Navbar() {
         {/* 🔵 Button */}
         <div>
           <Link
-            to="/contact"
+            // to="/contact"
             className="btn text-white bg-[#9D1A10] rounded-xl p-10"
           >
             Contact Us

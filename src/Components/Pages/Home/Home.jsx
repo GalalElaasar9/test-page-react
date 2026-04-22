@@ -121,24 +121,32 @@ export default function Home() {
           </Swiper>
         </section>
         {/* Offers Section */}
-        <section className="offers relative text-center" style={{ marginTop: "40px" }}>
-          <div className="absolute w-[200px] h-[200px] top-[45%] left-[5%] translate-y-[-50%] -z-10 bg-[#9D1A10] rounded-full"></div>
+        <section className="offers text-center" style={{ marginTop: "40px" }}>
           <p className="text-white text-[24px] font-light opacity-50 text-center">
             Try our distinguished services
           </p>
           <h2 className="text-white text-[36px] font-bold mb-4 text-center">What We <span className="text-[#9D1A10]">Offers</span> </h2>
-          <p className="text-white text-[24.5px] leading-relaxed text-left opacity-50">
+          <p className="text-white text-[24.5px] leading-relaxed text-left opacity-90 font-light">
             Continuously improve the quality of our food, beverage. hospitality
             and retail outlets to ensure they deliver a highly innovative <br /> and
             contemporary service, meeting the diverse needs of our customers
             expectations and desires
           </p>
           <div className="offers-image grid grid-cols-1 lg:grid-cols-3 gap-8" style={{ marginTop: "20px" }}>
-            {offers.map((offer) => (
+            {offers.map((offer, index) => (
               <figure
                 key={offer.id}
-                className="rounded-l shadow-md overflow-hidden hover:shadow-lg transition"
+                className="relative rounded-l shadow-md hover:shadow-lg transition"
               >
+                <div
+                  className={`
+                    absolute rounded-full -z-10
+                    ${index === 0
+                      ? "w-[200px] h-[200px] top-[31%] left-[10%] bg-[#9D1A10]"
+                      : "w-[350px] h-[350px] left-[50%] top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#9d19108a] blur-3xl opacity-90"
+                    }
+                  `}
+                ></div>
                 <img
                   src={offer.image}
                   alt={offer.title}
