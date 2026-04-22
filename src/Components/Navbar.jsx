@@ -16,7 +16,7 @@ export default function Navbar() {
   const location = useLocation();
 
   return (
-    <header className="container fixed w-full left-0 right-0 top-0 z-50 bg-black">
+    <header className="container lg:container_lg xl:container fixed w-full left-0 right-0 top-0 z-50 bg-black">
       <div className=" mx-auto flex items-center justify-between h-16 px-4">
 
         {/* 🟢 Logo */}
@@ -88,7 +88,7 @@ export default function Navbar() {
                     ${
                       isActive
                         ? "text-white border-l-4 border-red-600 pl-2"
-                        : "text-white opacity-60"
+                        : "text-white opacity-60 font-light"
                     }`}
                 >
                   {link.label}
@@ -97,9 +97,9 @@ export default function Navbar() {
             })}
               <Link
                 onClick={() => setOpen(false)}
-                className="btn text-center w-fit px-4 py-2 bg-[#9D1A10] text-white rounded-md"
+                className="btn text-center w-fit px-4 py-2 bg-[#9D1A10] text-white rounded-lg uppercase"
               >
-                Contact
+                Contact Us
               </Link>
           </div>
         </div>

@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="container text-white" style={{ padding:'50px 0' }}>
-      <div className="grid grid-cols-1 xl:grid-cols-12 gap-10">
-        <div className="lg:col-span-6 md:text-center xl:text-left">
-          <div className="flex items-center md:justify-center xl:justify-start gap-3" style={{ marginBottom:"20px" }}>
+    <footer className="container lg:container_lg xl:container text-white" style={{ padding:'50px 0' }}>
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        <div className="lg:col-span-6 md:text-center lg:text-left">
+          <div className="flex items-center md:justify-center lg:justify-start gap-3" style={{ marginBottom:"20px" }}>
             <img src={logo} alt="logo" className="h-[100px] w-[100px] object-contain"/>
               <h2 className="text-xl font-bold">
                 4 SEASONS
@@ -29,7 +29,7 @@ export default function Footer() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {/* Company */}
               <div className="company">
-                <h4 className="font-bold text-lg" style={{ marginBottom:"10px" }}>
+                <h4 className="font-bold text-lg lg:text-[14px] xl:text-lg" style={{ marginBottom:"10px" }}>
                   Company
                 </h4>
                 <ul className="space-y-2 text-gray-400">
@@ -63,7 +63,7 @@ export default function Footer() {
 
               {/* Services */}
               <div className="provide">
-                <h4 className="font-bold text-lg" style={{ marginBottom:"10px" }}>
+                <h4 className="font-bold text-lg lg:text-[14px] xl:text-lg" style={{ marginBottom:"10px" }}>
                   We Provide
                 </h4>
 
@@ -79,7 +79,7 @@ export default function Footer() {
 
               {/* Contact */}
               <div className="contact">
-                <h4 className="font-bold text-lg" style={{ marginBottom:"10px" }}>
+                <h4 className="font-bold text-lg lg:text-[14px] xl:text-lg" style={{ marginBottom:"10px" }}>
                   Contact Informations
                 </h4>
                   <ul className="space-y-2 text-gray-400">

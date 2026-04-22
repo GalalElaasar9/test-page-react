@@ -21,6 +21,10 @@ body{
   max-width: 1350px;
   margin: 0 auto;
 }
+/* .container_lg{
+  max-width: 1126px;
+  margin: 0 auto;
+} */
 
 .btn{
   padding: 10px 30px;
@@ -30,6 +34,14 @@ body{
     margin-bottom: 10px;
   }
 }
+
+@media (min-width: 1024px) {
+  .container_lg {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
 /* :root {
   --text: #6b6375;
   --text-h: #08060d;
