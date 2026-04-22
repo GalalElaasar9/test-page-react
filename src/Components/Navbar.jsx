@@ -52,15 +52,15 @@ export default function Navbar() {
             );
           })}
           {/* 🔵 Button */}
+        </nav>
           <div>
             <Link
               // to="/contact"
-              className="btn text-white bg-[#9D1A10] rounded-xl font-light text-md uppercase"
+              className="btn hidden lg:block text-white bg-[#9D1A10] rounded-xl font-light text-md uppercase"
             >
               Contact Us
             </Link>
           </div>
-        </nav>
 
         {/* 📱 Mobile button */}
         <button
@@ -74,7 +74,7 @@ export default function Navbar() {
       {/* 📱 Mobile Menu */}
       {open && (
         <div className="lg:hidden bg-black/90 border-t border-white/10">
-          <div className="px-4 py-5 flex flex-col gap-5">
+          <div className="flex flex-col gap-5" style={{ padding:"30px 0" }}>
 
             {navLinks.map((link) => {
               const isActive = location.pathname === link.to;
@@ -97,7 +97,7 @@ export default function Navbar() {
             })}
               <Link
                 onClick={() => setOpen(false)}
-                className="btn text-center px-4 py-2 bg-[#9D1A10] text-white rounded-md"
+                className="btn text-center w-fit px-4 py-2 bg-[#9D1A10] text-white rounded-md"
               >
                 Contact
               </Link>
