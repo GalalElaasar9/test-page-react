@@ -97,7 +97,7 @@ export default function Navbar() {
             })}
               <Link
                 onClick={() => setOpen(false)}
-                className="btn text-center w-fit px-4 py-2 bg-[#9D1A10] text-white rounded-lg uppercase"
+                className="btn text-center w-fit bg-[#9D1A10] text-white rounded-lg uppercase"
               >
                 Contact Us
               </Link>
